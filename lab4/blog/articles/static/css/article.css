@@ -1,0 +1,48 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header img {
+    display: block;
+    /* width: 318px; */
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-bar {
+    display: block;
+}
+
+.post-title {
+    float: left;
+    width: 50%;
+
+}
+
+.all-articles {
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+
+.all-articles a{
+    color: #ffffff;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+}
