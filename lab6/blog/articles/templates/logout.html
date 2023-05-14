@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/logout.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/dog.jpg" />
+        <h2 class="all-articles"><a href="/">Все статьи</a></h2>
+    </div>
+    <h1>Вы успешно вышли из системы.</h1>
+    <a href="{% url 'login' %}">Войти снова</a>
+</body>
+
+</html>

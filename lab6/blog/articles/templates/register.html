@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/register.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/dog.jpg" />
+        <h2 class="all-articles"><a href="/">Все статьи</a></h2>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+
+</html>

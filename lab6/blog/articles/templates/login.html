@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/login.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/dog.jpg" />
+        <h2 class="all-articles"><a href="/">Все статьи</a></h2>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Войти</button>
+    </form><br>
+    <a href="{% url 'register' %}">Зарегистрироваться</a>
+</body>
+
+</html>
